@@ -6,10 +6,10 @@ This module allows you to integrate AWS account with Uptycs so required AWS clou
 
 ```hcl
 module "ct-config" {
-  source = "uptycslabs/uptycs/modules/cloudtrail_integration"
+  source = "uptycslabs/uptycs/aws//modules/cloudtrail_integration"
 
   role_name                       = "UptycsIntegration-cloudtrail"
-  upt_account_id                  = "685272795239"
+  upt_account_id                  = "123456789012"
   external_id                     = "6bf64888-6e43-4003-9f1b-37181efcf3c2"
   permissions_boundary_policy_arn = ""
 

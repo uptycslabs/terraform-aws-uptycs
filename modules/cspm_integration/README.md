@@ -6,11 +6,11 @@ This module allows you to integrate AWS account with Uptycs so required AWS tele
 
 ```hcl
 module "cspm-config" {
-  source = "uptycslabs/uptycs/modules/cspm_integration"
+  source = "uptycslabs/uptycs/aws//modules/cspm_integration"
 
 
   role_name                       = "UptycsIntegration-cspm"
-  upt_account_id                  = "685272795239"
+  upt_account_id                  = "123456789012"
   external_id                     = "6bf64888-6e43-4003-9f1b-37181efcf3c2"
   permissions_boundary_policy_arn = ""
 }

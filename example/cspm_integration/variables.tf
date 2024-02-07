@@ -1,25 +1,24 @@
 
 
 variable "role_name" {
-  description = "role_name."
+  description = "Name of the new role for Uptycs cloudtrail Integration"
   type        = string
-  default     = "UptycsIntegration-cloudtrail"
+  default     = "UptycsIntegration-cspm"
 }
 
 variable "upt_account_id" {
-  description = "upt_account_id"
+  description = "Uptycs AWS account ID"
   type        = string
-  default     = "685272795239"
 }
 
 variable "external_id" {
-  description = "external_id"
+  description = "Role Trust Relationship STS condition string(UUID)"
   type        = string
   default     = "6bf64888-6e43-4003-9f1b-37181efcf3c2"
 }
 
 variable "permissions_boundary_policy_arn" {
-  description = "permissions_boundary_policy_arn"
+  description = "Permissions Boundary Arn for Attaching to new Role"
   type        = string
   default     = ""
 }
