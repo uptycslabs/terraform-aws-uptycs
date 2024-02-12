@@ -8,13 +8,13 @@ All the modules in this Projects are used to create required resources based on 
 
 Supported Integrations
 
-1.  [Cspm-Integration](modules/cspm_integration)
+1.  [CSPM-Integration](modules/cspm_integration)
 2.  [Cloudtrail-Integration](modules/cloudtrail_integration)
 
 
 
 
-## Cspm-Integration
+## CSPM-Integration
 
 [This module](modules/cspm_integration) performs creation of resources to make aws telemetry accessible to uptycs applications.
 
