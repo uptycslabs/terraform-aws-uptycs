@@ -24,11 +24,11 @@ output "aws_parameters" {
 
 The cspm integration module will perform the following actions:
 
-1. create a new aws iam role using `role_name` with trust relationship policy contains Principal of value of `upt_account_id` and sts condition under string match with UUID of value `external_id`.
-1. create and attach `UptycsReadOnlyPolicy` inline policy to new role.
-1. attach `policy/job-function/ViewOnlyAccess` aws managed policy to new role.
-1. attach `policy/SecurityAudit` aws managed policy to new role.
-1. attach permission boundery based on input `permissions_boundary_policy_arn`
+1. Create a new aws iam role using `role_name` with trust relationship policy contains Principal of value of `upt_account_id` and sts condition under string match with UUID of value `external_id`.
+1. Create and attach `UptycsReadOnlyPolicy` inline policy to new role.
+1. Attach `policy/job-function/ViewOnlyAccess` aws managed policy to new role.
+1. Attach `policy/SecurityAudit` aws managed policy to new role.
+1. Attach permission boundery based on input `permissions_boundary_policy_arn`
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
