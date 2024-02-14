@@ -1,6 +1,6 @@
 # Cloudtrail Integration Project
 
-This example illustrates how to create a `cloudtrail-integration` using s3 bucket for uptycs.
+This example illustrates how to create a `Cloudtrail-Integration` using an s3 bucket details for Uptycs.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

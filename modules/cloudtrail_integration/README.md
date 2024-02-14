@@ -1,6 +1,6 @@
 # Terraform module for AWS Cloudtrail Monitoring Integration with Uptycs
 
-This module allows you to integrate AWS account with Uptycs. So, required AWS cloudtrail events are accessible to CSPM and CIEM applications.
+This module allows you to integrate an AWS account with Uptycs. So, required AWS cloudtrail events are accessible to CSPM and CIEM applications.
 
 ## Usage
 
@@ -31,12 +31,11 @@ output "aws_parameters" {
 
 ## Features
 
-The cloudtrail integration module will perform the following actions:
-
-1. Create a new aws IAM role using `role_name` if any of `cloudtrail_bucket_names_list` and `cloudtrail_kinesis_stream_arns_list` are not empty. Created with trust relationship policy contains principal of value of `upt_account_id` and sts condition under string match with UUID of value `external_id`.
-1. Create and attach `ReadS3bucketsPolicy` inline policy to new role based on input `cloudtrail_bucket_names_list`.
-1. Create and attach `SubscribeKinesisStreamPolicy` inline policy to new role based on input `cloudtrail_kinesis_stream_arns_list`.
-1. Attach permission boundery based on input `permissions_boundary_policy_arn`
+1. The Cloudtrail integration module will perform the following actions:
+1. Create a new aws Iam role using `role_name` if any of `cloudtrail_bucket_names_list` and `cloudtrail_kinesis_stream_arns_list` are not empty. created with trust relationship policy contains Principal of the value of ` upt_account_id`` and sts condition under string match with UUID of value  `external_id`.
+1. Create and attach `ReadS3bucketsPolicy` inline policy to a new role based on input `cloudtrail_bucket_names_list`.
+1. Create and attach `SubscribeKinesisStreamPolicy` inline policy to a new role based on input `cloudtrail_kinesis_stream_arns_list`.
+1. Attach permission boundary based on input `permissions_boundary_policy_arn`
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

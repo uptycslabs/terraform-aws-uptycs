@@ -1,6 +1,6 @@
 # Cloudtrail Integration Project
 
-This example illustrates how to create a `cloudtrail-integration` using kinesis stream for uptycs.
+This example illustrates how to create a `Cloudtrail-Integration` using a kinesis stream for Uptycs.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

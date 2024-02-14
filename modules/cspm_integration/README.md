@@ -1,6 +1,6 @@
 # Terraform module for AWS CSPM Integration with Uptycs
 
-This module allows you to integrate AWS account with Uptycs so required AWS telemetry are accessible to CSPM and CIEM applications.
+This module allows you to integrate an AWS account with Uptycs so that required AWS telemetry is accessible to CSPM and CIEM applications.
 
 ## Usage
 
@@ -22,13 +22,13 @@ output "aws_parameters" {
 
 ## Features
 
-The cspm integration module will perform the following actions:
+The CSPM integration module will perform the following actions:
 
-1. Create a new aws iam role using `role_name` with trust relationship policy contains Principal of value of `upt_account_id` and sts condition under string match with UUID of value `external_id`.
-1. Create and attach `UptycsReadOnlyPolicy` inline policy to new role.
-1. Attach `policy/job-function/ViewOnlyAccess` aws managed policy to new role.
-1. Attach `policy/SecurityAudit` aws managed policy to new role.
-1. Attach permission boundery based on input `permissions_boundary_policy_arn`
+1. Create a new aws Iam role using `role_name` with trust relationship policy containing Principal of value of `upt_account_id` and sts condition under string match with UUID of value `external_id`.
+1. Create and attach the `UptycsReadOnlyPolicy` inline policy to a new role.
+1. Attach `policy/job-function`/ViewOnlyAccess` AWS managed policy to a new role.
+1. Attach `policy/SecurityAudit` AWS managed policy to a new role.
+1. Attach permission boundary based on input `permissions_boundary_policy_arn`
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
