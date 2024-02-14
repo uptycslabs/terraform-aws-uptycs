@@ -1,6 +1,6 @@
 # Cspm Integration Project
 
-This example illustrates how to create a `cspm-integration` for uptycs.
+This example illustrates how to create a `Cspm-Integration` for Uptycs.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
