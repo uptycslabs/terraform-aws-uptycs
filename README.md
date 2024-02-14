@@ -8,7 +8,7 @@ All the modules in this Project are used to create required resources based on i
 
 Supported Integrations
 
-1.  [CSPM-Integration](modules/cspm_integration)
+1.  [Cspm-Integration](modules/cspm_integration)
 2.  [Cloudtrail-Integration](modules/cloudtrail_integration)
 
 ## CSPM-Integration
