@@ -1,24 +1,24 @@
-# Terraform module for AWS Integrations with Uptycs
+# Terraform Module for AWS Integrations with Uptycs
 
-This module allows you to Integrate an AWS account with Uptycs. So, required AWS telemetry and events Monitoring are accessible to CSPM and CIEM applications.
+This module integrates an AWS account with Uptycs, providing access to crucial AWS telemetry and event monitoring for CSPM and CIEM applications.
 
 ## Usage
 
-All the modules in this Project are used to create required resources based on integration type with Uptycs
+All the modules in this Project are used to create required resources based on the integration type with Uptycs.
 
-Supported Integrations
+The following integratins are supported:
 
-1.  [Cspm-Integration](modules/cspm_integration)
-2.  [Cloudtrail-Integration](modules/cloudtrail_integration)
+- [CSPM Integration](modules/cspm_integration)
+- [CloudTrail Integration](modules/cloudtrail_integration)
 
-## CSPM-Integration
+## CSPM Integration
 
-[This module](modules/cspm_integration) performs the creation of resources to make AWS telemetry accessible to Uptycs applications.
+[This module](modules/cspm_integration) facilitates the creation of resources to enable the accessibility of AWS telemetry for Uptycs applications.
 
-There are examples included in the [examples](examples) folder to illustrate [Cspm-Integration](examples/cspm_integration)
+The [examples](examples) folder contains illustrative examples showcasing [CSPM Integration](examples/cspm_integration).
 
-## Cloudtrail-Integration
+## CloudTrail Integration
 
-[This module](modules/cloudtrail_integration) performs the creation of resources to access the s3bucket and kinesis stream to make cloud-trail events accessible to Uptycs applications.
+[This module](modules/cloudtrail_integration) streamlines the creation of resources, enabling access to the S3 bucket and Kinesis stream, thereby making CloudTrail events accessible to Uptycs applications.
 
-There are examples included in the [examples](examples) folder to illustrate cloud-trail integration using [s3bucket](examples/cloudtrail_integration_s3) and [kinesis stream](examples/cloudtrail_integration_kinesis)
+The [examples](examples) folder contains illustrative CloudTrail integration demonstrations utilizing [S3 Bucket](examples/cloudtrail_integration_s3) and [Kinesis stream](examples/cloudtrail_integration_kinesis).
