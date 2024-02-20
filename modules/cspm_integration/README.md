@@ -1,6 +1,6 @@
 # Terraform module for AWS CSPM Integration with Uptycs
 
-This module allows you to integrate an AWS account with Uptycs so that required AWS telemetry is accessible to CSPM and CIEM applications.
+This module allows you to integrate an AWS account with Uptycs, providing access to crucial AWS telemetry for CSPM and CIEM applications.
 
 ## Usage
 
@@ -22,13 +22,14 @@ output "aws_parameters" {
 
 ## Features
 
-The CSPM integration module will perform the following actions:
+The CSPM integration module performs the following actions:
 
-1. Create a new aws Iam role using `role_name` with trust relationship policy containing Principal of value of `upt_account_id` and sts condition under string match with UUID of value `external_id`.
-1. Create and attach the `UptycsReadOnlyPolicy` inline policy to a new role.
-1. Attach `policy/job-function`/ViewOnlyAccess` AWS managed policy to a new role.
-1. Attach `policy/SecurityAudit` AWS managed policy to a new role.
-1. Attach permission boundary based on input `permissions_boundary_policy_arn`
+1. Creates a new AWS IAM role using `role_name` with trust relationship policy containing Principal of value of `upt_account_id` and an STS condition that matches the UUID value of `external_id`.
+1. Creates and attaches the inline policy `UptycsReadOnlyPolicy` to the new role.
+1. Attaches the following AWS managed policies to the new role:
+   - `policy/job-function`/ViewOnlyAccess`
+   - `policy/SecurityAudit`
+1. Attaches permission boundary `permissions_boundary_policy_arn` based on input.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -36,13 +37,13 @@ The CSPM integration module will perform the following actions:
 
 | Name                            | Description                                            | Type          | Default                  | Required |
 | ------------------------------- | ------------------------------------------------------ | ------------- | ------------------------ | -------- |
-| role_name                       | Name to be used for creating role for cspm integration | `string`      | `UptycsIntegration-cspm` | Optional |
+| role_name                       | Role name for creating a role for CSPM integration     | `string`      | `UptycsIntegration-cspm` | Optional |
 | upt_account_id                  | Uptycs AWS account ID                                  | `string`      | `""`                     | Yes      |
 | external_id                     | External ID for STS string equal condition             | `uuid4`       | `""`                     | Yes      |
 | permissions_boundary_policy_arn | Policy ARNs used to set permission boundary            | `string`      | `""`                     | Optional |
 | tags                            | Map of Tags for created resources                      | `map(string)` | `{}`                     | Optional |
 
-### Outputs
+### Output
 
 | Name           | Description                                     |
 | -------------- | ----------------------------------------------- |
