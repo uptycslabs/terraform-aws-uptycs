@@ -21,4 +21,4 @@ The example folder contains illustrative examples showcasing [CSPM Integration](
 
 This module streamlines the creation of resources, enabling access to the S3 bucket and Kinesis stream, thereby making CloudTrail events accessible to Uptycs applications.
 
-The examples folder contains illustrative CloudTrail integration demonstrations utilizing [S3 Bucket](examples/cloudtrail_integration_s3) and [Kinesis stream](examples/cloudtrail_integration_kinesis).
+The examples folder contains illustrative CloudTrail integration demonstrations utilizing [S3 Bucket](examples/cloudtrail_integration_s3) and [Kinesis Stream](examples/cloudtrail_integration_kinesis).
