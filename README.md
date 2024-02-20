@@ -13,12 +13,12 @@ The following integratins are supported:
 
 ## CSPM Integration
 
-[This module](modules/cspm_integration) facilitates the creation of resources to enable the accessibility of AWS telemetry for Uptycs applications.
+This module facilitates the creation of resources to enable the accessibility of AWS telemetry for Uptycs applications.
 
-The [examples](examples) folder contains illustrative examples showcasing [CSPM Integration](examples/cspm_integration).
+The example folder contains illustrative examples showcasing [CSPM Integration](examples/cspm_integration).
 
 ## CloudTrail Integration
 
-[This module](modules/cloudtrail_integration) streamlines the creation of resources, enabling access to the S3 bucket and Kinesis stream, thereby making CloudTrail events accessible to Uptycs applications.
+This module streamlines the creation of resources, enabling access to the S3 bucket and Kinesis stream, thereby making CloudTrail events accessible to Uptycs applications.
 
-The [examples](examples) folder contains illustrative CloudTrail integration demonstrations utilizing [S3 Bucket](examples/cloudtrail_integration_s3) and [Kinesis stream](examples/cloudtrail_integration_kinesis).
+The examples folder contains illustrative CloudTrail integration demonstrations utilizing [S3 Bucket](examples/cloudtrail_integration_s3) and [Kinesis stream](examples/cloudtrail_integration_kinesis).
