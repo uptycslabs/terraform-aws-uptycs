@@ -35,18 +35,18 @@ The CSPM integration module performs the following actions:
 
 ### Inputs
 
-| Name                            | Description                                            | Type          | Default                  | Required |
-| ------------------------------- | ------------------------------------------------------ | ------------- | ------------------------ | -------- |
-| role_name                       | Role name for creating a role for CSPM integration     | `string`      | `UptycsIntegration-cspm` | Optional |
-| upt_account_id                  | Uptycs AWS account ID                                  | `string`      | `""`                     | Yes      |
-| external_id                     | External ID for STS string equal condition             | `uuid4`       | `""`                     | Yes      |
-| permissions_boundary_policy_arn | Policy ARNs used to set permission boundary            | `string`      | `""`                     | Optional |
-| tags                            | Map of Tags for created resources                      | `map(string)` | `{}`                     | Optional |
+| Name  | Description | Type | Default | Required |
+| --- | --- | --- | --- | --- |
+| role_name | Role name for creating a role for CSPM integration | `string` | `UptycsIntegration-cspm` | Optional |
+| upt_account_id | Uptycs AWS account ID | `string` | `""` | Yes |
+| external_id | External ID for STS string equal condition | `uuid4` | `""` | Yes |
+| permissions_boundary_policy_arn | Policy ARNs used to set permission boundary | `string` | `""`  | Optional |
+| tags | Map of Tags for created resources | `map(string)` | `{}` | Optional |
 
 ### Output
 
-| Name           | Description                                     |
-| -------------- | ----------------------------------------------- |
+| Name | Description |
+| --- | --- |
 | aws_parameters | AWS parameters (ExternalId and IntegrationName) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
