@@ -42,20 +42,20 @@ The CloudTrail integration module performs the following actions:
 
 ### Inputs
 
-| Name                                | Description                                                  | Type           | Default                        | Required |
-| ----------------------------------- | ------------------------------------------------------------ | -------------- | ------------------------------ | -------- |
-| role_name                           | Role name for creating role for CloudTrail integration       | `string`       | `UptycsIntegration-cloudtrail` | Optional |
-| upt_account_id                      | Uptycs AWS account ID                                        | `string`       | `""`                           | Yes      |
-| external_id                         | External ID for STS string equal condition                   | `uuid4`        | `""`                           | Yes      |
-| permissions_boundary_policy_arn     | Policy ARNs used to set permission boundary                  | `string`       | `""`                           | Optional |
-| cloudtrail_bucket_names_list        | List of CloudTrail S3 bucket names                           | `list(string)` | `[]`                           | Optional |
-| cloudtrail_kinesis_stream_arns_list | List of CloudTrail Kinesis Stream ARN                        | `list(string)` | `[]`                           | Optional |
-| tags                                | Map of Tags for created resources                            | `map(string)`  | `{}`                           | Optional |
+| Name | Description | Type | Default | Required |
+| --- | --- | --- | --- | --- |
+| role_name | Role name for creating role for CloudTrail integration | `string` | `UptycsIntegration-cloudtrail` | Optional |
+| upt_account_id | Uptycs AWS account ID | `string` | `""` | Yes |
+| external_id | External ID for STS string equal condition | `uuid4` | `""` | Yes |
+| permissions_boundary_policy_arn | Policy ARNs used to set permission boundary | `string` | `""` | Optional |
+| cloudtrail_bucket_names_list | List of CloudTrail S3 bucket names | `list(string)` | `[]` | Optional |
+| cloudtrail_kinesis_stream_arns_list | List of CloudTrail Kinesis Stream ARN | `list(string)` | `[]` | Optional |
+| tags | Map of Tags for created resources | `map(string)`  | `{}` | Optional |
 
 ### Outputs
 
-| Name           | Description                              |
-| -------------- | ---------------------------------------- |
+| Name | Description |
+| --- | --- |
 | aws_parameters | AWS parameters (ExternalId and RoleName) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
