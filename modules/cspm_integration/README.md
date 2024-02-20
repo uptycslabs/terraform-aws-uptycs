@@ -1,4 +1,4 @@
-# Terraform module for AWS CSPM Integration with Uptycs
+# Terraform Module for AWS CSPM Integration with Uptycs
 
 This module allows you to integrate an AWS account with Uptycs, providing access to crucial AWS telemetry for CSPM and CIEM applications.
 
