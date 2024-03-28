@@ -6,7 +6,7 @@ This module allows you to integrate an AWS account with Uptycs, providing access
 
 All the modules in this Project are used to create required resources based on the integration type with Uptycs.
 
-The following integratins are supported:
+The following integrations are supported:
 
 - [CSPM Integration](modules/cspm_integration)
 - [CloudTrail Integration](modules/cloudtrail_integration)

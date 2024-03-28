@@ -26,7 +26,7 @@ The CSPM integration module performs the following actions:
 
 1. Creates a new AWS IAM role using `role_name` with trust relationship policy containing Principal of value of `upt_account_id` and an STS condition that matches the UUID value of `external_id`.
 1. Creates and attaches the inline policy `UptycsReadOnlyPolicy` to the new role.
-1. Attaches the following AWS managed policies to the new role:
+1. Attaches the following AWS-managed policies to the new role:
    - `policy/job-function`/ViewOnlyAccess`
    - `policy/SecurityAudit`
 1. Attaches permission boundary `permissions_boundary_policy_arn` based on input.
