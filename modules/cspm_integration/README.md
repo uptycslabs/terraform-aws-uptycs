@@ -16,7 +16,7 @@ module "cspm-config" {
 }
 
 output "aws_parameters" {
-  value = module.cspm-config.aws_parameters
+  value = module.cspm-config.cspm_role_details
 }
 ```
 
