@@ -18,6 +18,6 @@ This example illustrates how to create a `CSPM-Integration` for Uptycs.
 
 | Name | Description |
 | ---| --- |
-| aws_parameters | AWS parameters (ExternalId and IntegrationName) |
+| cspm_role_details | AWS parameters (ExternalId and IntegrationName) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
