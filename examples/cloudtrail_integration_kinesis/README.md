@@ -20,6 +20,6 @@ This example illustrates how to create a `CloudTrail-Integration` using a Kinesi
 
 | Name | Description |
 | --- | --- |
-| aws_parameters | AWS parameters (ExternalId and IntegrationName) |
+| cloudtrail_role_details | AWS parameters (ExternalId and IntegrationName) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
