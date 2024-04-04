@@ -16,7 +16,7 @@ module "cspm-config" {
 }
 
 output "aws_parameters" {
-  value = module.cspm-config.aws_parameters
+  value = module.cspm-config.cspm_role_details
 }
 ```
 
@@ -47,6 +47,6 @@ The CSPM integration module performs the following actions:
 
 | Name | Description |
 | --- | --- |
-| aws_parameters | AWS parameters (ExternalId and IntegrationName) |
+| cspm_role_details | AWS parameters (ExternalId and IntegrationName) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

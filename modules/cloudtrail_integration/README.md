@@ -34,9 +34,9 @@ output "aws_parameters" {
 The CloudTrail integration module performs the following actions:
 
 1. Creates a new AWS IAM role using `role_name` with trust relationship policy containing Principal of value of `upt_account_id` and an STS condition that matches the UUID value of `external_id`.
-   
+
    **Note**: It is mandatory that you specify `cloudtrail_bucket_names_list` and/or `cloudtrail_kinesis_stream_arns_list`, else the role is not created.
-   
+
 1. Creates and attaches the inline policy `ReadS3bucketsPolicy` to the new role based on input `cloudtrail_bucket_names_list`.
 1. Creates and attaches the inline policy `SubscribeKinesisStreamPolicy` to the new role based on input `cloudtrail_kinesis_stream_arns_list`.
 1. Attaches permission boundary `permissions_boundary_policy_arn` based on input.
@@ -59,6 +59,6 @@ The CloudTrail integration module performs the following actions:
 
 | Name | Description |
 | --- | --- |
-| aws_parameters | AWS parameters (ExternalId and RoleName) |
+| cloudtrail_role_details | AWS parameters (ExternalId and RoleName) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
